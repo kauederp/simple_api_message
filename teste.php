@@ -12,6 +12,7 @@
     <title>Teste api</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        var result;
         $(document).ready(function(){
             $("button").click(function(){
                 $.post("http://localhost/api/",
@@ -20,7 +21,7 @@
                 message: $("#message").val()
                 },
                 function(data){
-                console.log(data);
+                    result = data;
                 });
             });
         });

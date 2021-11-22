@@ -19,13 +19,13 @@
               ':tstamp' => $timestamp
             ));
           } catch(PDOException $e) {
-            echo '{status: "error"}';
+            echo '{"status": "error"}';
           }
-          $data = "{timestamp: ".$timestamp.", status: success}";
+          $data = '{"timestamp": '.$timestamp.', "status": "success"}';
           echo $data;
           json_encode($data); // retorna em formato json
     }else{
-        $e = '{status: "error"}';
+        $e = '{"status": "error"}';
         echo $e;
         json_encode($e);
     }
