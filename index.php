@@ -23,14 +23,15 @@
 			$_SESSION['nick'] = $_POST['nick'];
 	} 
 	if(!isset($_SESSION['nick'])){
-		echo '<form class="container-fluid bg-dark text-light justify-content-center d-flex flex-row" action="" method="post">
-			<fieldset>
-				<legend>Personalia:</legend>
-				<label for="nick">nickname:</label>
-				<input type="text" id="nick" name="nick"><br><br>
-						
-				<input name="login" type="submit" value="Submit">
-			</fieldset>
+		echo '<form class="container-fluid justify-content-center bg-dark text-light d-flex flex-row" action="" method="post">
+				<div class="row">
+					<label for="nick">nickname:</label>
+					<input class="row" type="text" id="nick" name="nick">
+				</div>
+				<div class="row mt-4">
+					<input name="login" type="submit" value="Submit">
+				</div>
+
 		</form>';
 	}else{
 		echo "<form id='form' class='row justify-content-center'>
