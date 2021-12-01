@@ -1,6 +1,7 @@
+const url = "http://localhost/api/"
 var h_message = document.getElementById("history")
 var enviarMessage = document.getElementById("enviar")
-const url = "http://localhost/apoio/api/"
+
 
 function addMessage(message){
     history.innerText = message;
